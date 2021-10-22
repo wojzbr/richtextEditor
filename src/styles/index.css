@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#richtext-editor{
+  padding: 20px;
+  border: 1px dashed darkgray;
+  height: 400px;
+  overflow: hidden;
+  cursor: text;
+}
+#richtext-editor:focus {
+  outline: none;
+  border: 2px solid darkgray;
+}
+#richtext-editor[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: gray;
+}

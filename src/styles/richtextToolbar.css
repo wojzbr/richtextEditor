@@ -1,0 +1,51 @@
+#richtextToolbarWrapper {
+    z-index: 20;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: lightgray;
+    padding: 0 10px;
+    box-shadow: 0 5px 5px darkgray;
+}
+.richtextToolbarButton {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid darkgray;
+    border-radius: 2px;
+    background: lightgray;
+    margin: 0 2px;
+}
+.richtextToolbarButton *, .symbolsConsoleButton * {
+    cursor: pointer;
+}
+.richtextToolbarButton:hover, .symbolsConsoleButton:hover {
+    background: darkgray !important;
+}
+
+#greekLettersConsole, #mathSymbolsConsole {
+    position: fixed;
+    top: 50px;
+    background: lightgray;
+    box-shadow: 0 10px 10px darkgray;
+    border-radius: 2px;
+    left: 300px;
+    z-index: 20;
+    visibility: hidden;
+    padding: 3px;
+    max-width: 198px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.symbolsConsoleButton {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid darkgray;
+    border-radius: 2px;
+    background: lightgray;
+    margin: 1px;
+}
