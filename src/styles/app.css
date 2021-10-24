@@ -1,0 +1,19 @@
+.App {
+  padding-top: 50px;
+}
+#editorWindowWrapper {
+  box-shadow: 0 0 20px darkgray;
+  position: absolute;
+  left: calc(50% - 350px);
+  width: 700px;
+}
+
+@media only screen and (max-width: 480px) {
+  .App {
+    padding-top: 0;
+  }
+  #editorWindowWrapper {
+    left: 0;
+    width: 100vw;
+  }
+}
