@@ -1,0 +1,25 @@
+#richtext-editor{
+  height: 400px;
+  padding: 10px;
+  position: relative;
+  font-size: 1.5rem;
+  overflow: hidden;
+  cursor: text;
+  border: 1px solid darkgray;
+}
+#richtext-editor:focus {
+  outline: none;
+}
+#richtext-editor[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: gray;
+}
+
+@media only screen and (max-width: 480px) {
+  #richtext-editor {
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    font-size: 2rem;
+  }
+}

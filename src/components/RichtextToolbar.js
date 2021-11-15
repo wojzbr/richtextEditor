@@ -36,7 +36,7 @@ const RichtextToolbar = () => {
                 onMouseOver={()=>document.getElementById("greekLettersConsole").style.visibility="visible"}
                 onMouseOut={()=>document.getElementById("greekLettersConsole").style.visibility="hidden"}
                 className="richtextToolbarButton">
-                α β
+                α
             </button>
 
             <SymbolsConsole id="greekLettersConsole" symbols={greekAlphabet}/>

@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import RichtextToolbar from './components/RichtextToolbar'
+import './styles/app.css'
 
 function App() {
 
@@ -26,8 +27,10 @@ function App() {
 
   return (
     <div className="App">
-      <RichtextToolbar />
-      <div contentEditable="true" id="richtext-editor" placeholder="Please start typing..."/>
+      <div id="editorWindowWrapper">
+        <RichtextToolbar />
+        <div contentEditable="true" id="richtext-editor" placeholder="Please start typing..."/>
+      </div>
     </div>
   );
 }

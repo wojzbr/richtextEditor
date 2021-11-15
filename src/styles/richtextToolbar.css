@@ -1,11 +1,12 @@
 #richtextToolbarWrapper {
-    z-index: 20;
     height: 60px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    background: lightgray;
-    padding: 0 10px;
+    position: relative;
+    background: #3700b3;
     box-shadow: 0 5px 5px darkgray;
+    padding: 0 10px;
 }
 .richtextToolbarButton {
     cursor: pointer;
@@ -28,11 +29,11 @@
 
 #greekLettersConsole, #mathSymbolsConsole {
     position: fixed;
-    top: 50px;
+    top: 100px;
+    left: calc(50% - 30px);
     background: lightgray;
     box-shadow: 0 10px 10px darkgray;
     border-radius: 2px;
-    left: 300px;
     z-index: 20;
     visibility: hidden;
     padding: 3px;
@@ -48,4 +49,31 @@
     border-radius: 2px;
     background: lightgray;
     margin: 1px;
+}
+
+@media only screen and (max-width: 480px) {
+    #richtextToolbarWrapper {
+        height: 110px;
+        width: 100vw;
+        padding: 0;
+        left: 0;
+        top: 0;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .richtextToolbarButton {
+        margin: 1vw;
+        width: calc(100vw / 10);
+        height: calc(100vw / 10);
+    }
+    #greekLettersConsole, #mathSymbolsConsole {
+        top: 0;
+        left: 0;
+        max-width: 100vw;
+        height: 110px;
+    }
+    .symbolsConsoleButton {
+        width: calc(100vw / 11);
+        height: calc(100vw / 11);
+    }
 }
