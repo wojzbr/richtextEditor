@@ -7,6 +7,16 @@
   left: calc(50% - 350px);
   width: 700px;
 }
+#clause {
+  position: absolute;
+  bottom: 10px;
+  font-size: 10px;
+}
+#clause a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #3700b3;
+}
 
 @media only screen and (max-width: 480px) {
   .App {
